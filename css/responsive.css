@@ -1,0 +1,25 @@
+﻿@media (max-width: 720px) {
+  .role-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-nav {
+    height: auto;
+    padding: 14px;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .nav-actions {
+    flex-wrap: wrap;
+  }
+  main {
+    padding: 16px;
+  }
+  .tracking-strip {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

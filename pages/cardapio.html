@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBQ Parrila - Cardapio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a class="nav-brand" href="cardapio.html"
+        ><img src="../img/logo.svg" alt="" /> BBQ - Parrila</a
+      >
+      <div class="nav-actions">
+        <button class="nav-btn" id="openOrdersBtn">Pedidos</button>
+        <button class="cart-button" id="openCartBtn">
+          Carrinho <span id="cartCount">0</span>
+        </button>
+        <a class="nav-link" href="../index.html">Sair</a>
+      </div>
+    </nav>
+
+    <header class="menu-hero">
+      <div>
+        <h1>BBQ - Parrila</h1>
+        <p>Hamburgueres smash, batatas crocantes, combos e bebidas geladas.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="tracking-strip" id="trackingStrip">
+        <div>
+          <span class="section-kicker">Acompanhar pedidos</span>
+          <h2>Veja o andamento do seu ultimo pedido</h2>
+        </div>
+        <div class="tracking-actions" id="trackingActions"></div>
+      </section>
+
+      <section class="category-row" id="categoryRow"></section>
+      <section class="product-grid" id="productGrid"></section>
+    </main>
+
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="drawer-head">
+        <h2>Seu pedido</h2>
+        <button id="closeCartBtn">x</button>
+      </div>
+      <div class="drawer-body" id="cartItems"></div>
+      <div class="drawer-foot" id="cartFooter"></div>
+    </aside>
+
+    <div class="modal-backdrop" id="checkoutModal">
+      <section class="checkout-modal">
+        <div class="modal-head">
+          <h2 id="checkoutTitle">Finalizar pedido</h2>
+          <button id="closeCheckoutBtn">x</button>
+        </div>
+        <div id="checkoutBody"></div>
+      </section>
+    </div>
+
+    <script src="../js/carrinho.js"></script>
+  </body>
+</html>

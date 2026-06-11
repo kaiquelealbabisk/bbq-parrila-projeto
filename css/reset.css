@@ -1,0 +1,38 @@
+﻿:root {
+  --red: #b90108;
+  --red-dark: #810e11;
+  --black: #080808;
+  --dark: #111;
+  --card: #191919;
+  --card-soft: #222;
+  --border: #2d2d2d;
+  --text: #f4efe7;
+  --muted: #9c9c9c;
+  --gold: #f5a623;
+  --green: #2ecc71;
+  --blue: #3498db;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--text);
+  font-family: "Barlow", sans-serif;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}

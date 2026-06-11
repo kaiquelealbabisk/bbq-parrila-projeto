@@ -1,0 +1,27 @@
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+*.tmp
+*~
+
+# Outros arquivos e pastas que podem ser ignorados
+outros/

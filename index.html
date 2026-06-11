@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBQ Parrilla - Acesso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="brand-block">
+      <div class="brand-mark">
+        <img src="img/logo.svg" alt="Burger House">
+      </div>
+      <h1>BBQ - Parrila</h1>
+      <p>Hamburgueria Artesanal</p>
+    </section>
+
+    <section class="auth-card">
+      <div class="role-row">
+        <button class="role-btn active" data-role="cliente">Cliente</button>
+        <button class="role-btn" data-role="gerente">Gerente</button>
+        <button class="role-btn" data-role="cozinha">Cozinha</button>
+        <button class="role-btn" data-role="motoboy">Motoboy</button>
+      </div>
+
+      <div class="auth-head">
+        <span id="roleBadge">Area do Cliente</span>
+        <h2>Entrar</h2>
+        <p>Acesse sua area no BBQ Parrila.</p>
+      </div>
+
+      <div class="alert" id="loginAlert"></div>
+
+      <label class="field-label" for="loginEmail">E-mail</label>
+      <input class="input" id="loginEmail" type="email" placeholder="cliente@bbq-parrila.com">
+
+      <label class="field-label" for="loginPassword">Senha</label>
+      <div class="password-wrap">
+        <input class="input" id="loginPassword" type="password" placeholder="123456">
+        <button type="button" class="password-toggle" data-password-target="loginPassword">Ver</button>
+      </div>
+
+      <button class="primary-btn" id="loginBtn">Entrar</button>
+
+      <div class="auth-foot">
+        <button type="button" id="fillDemoBtn">Usar login demo</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
